@@ -1,0 +1,69 @@
+{
+  "name": "turn-chime",
+  "version": "0.1.0",
+  "description": "Chimes when a turn completes after 40s, and announces \"{title}. {task} is completed, sir.\" in a British voice after 5 minutes",
+  "author": {
+    "name": "Javier Loucim"
+  },
+  "userConfig": {
+    "thresholdSeconds": {
+      "type": "string",
+      "title": "Minimum turn length",
+      "description": "Seconds a turn must run before its completion plays the chime",
+      "default": "40",
+      "options": [
+        "10",
+        "20",
+        "30",
+        "40",
+        "60",
+        "90",
+        "120",
+        "300"
+      ]
+    },
+    "sound": {
+      "type": "string",
+      "title": "Chime sound",
+      "description": "Which bundled macOS system sound plays",
+      "default": "Glass",
+      "options": [
+        "Glass",
+        "Hero",
+        "Ping",
+        "Funk",
+        "Submarine",
+        "Blow"
+      ]
+    },
+    "speakAfterSeconds": {
+      "type": "string",
+      "title": "Speak after",
+      "description": "Seconds a turn must run before its completion is also announced by voice",
+      "default": "300",
+      "options": [
+        "60",
+        "120",
+        "180",
+        "300",
+        "600",
+        "900",
+        "1800"
+      ]
+    },
+    "voice": {
+      "type": "string",
+      "title": "Voice",
+      "description": "macOS system voice for the announcement (Daniel is the British one)",
+      "default": "Daniel",
+      "options": [
+        "Daniel",
+        "Eddy (English (UK))",
+        "Reed (English (UK))",
+        "Moira",
+        "Karen",
+        "Fred"
+      ]
+    }
+  }
+}

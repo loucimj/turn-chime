@@ -1,0 +1,14 @@
+{
+  "name": "loucimj-turn-chime",
+  "owner": {
+    "name": "Javier Loucim"
+  },
+  "description": "Javier Loucim's turn-chime mod for Claude Code",
+  "plugins": [
+    {
+      "name": "turn-chime",
+      "source": "./",
+      "description": "Chime after 40s turns, spoken \"{title}. {task} is completed, sir.\" after 5-minute turns"
+    }
+  ]
+}
